@@ -33,7 +33,7 @@ Orbit
 |[semiMajorAxis](https://en.wikipedia.org/wiki/Semi-major_and_semi-minor_axes)|Double|The average altitude of the body above its `referenceBody`'s center.|
 |longitudeOfAscendingNode|Double|The longitude at where the body crosses the `referenceBody`'s equator. It relies on `inclination`.|
 |argumentOfPeriapsis|Double|The longitude of the `referenceBody` where the body's periapsis is.|
-|[meanAnomalyAtEpoch](https://en.wikipedia.org/wiki/Mean_anomaly)|Double|The position of the body along the orbit, in radians, at the specified epoch between 0 and 2π, where 0 is the periapsis and π is the apoapsis.|
+|[meanAnomalyAtEpoch](https://en.wikipedia.org/wiki/Mean_anomaly)|Double|The position of the body along the orbit (in radians) at the specified epoch between 0 and 2π, where 0 is the periapsis and π is the apoapsis. It is measured in the direction the body orbits, which is always counter-clockwise unless the body orbits backwards.|
 |meanAnomalyAtEpochD|Double|Similar to `meanAnomalyAtEpoch`, but is in degrees instead of radians. Useful for more precise measurement.|
 |epoch|Double|The epoch at which `meanAnomalyAtEpoch` is described. Typically should be at 0 for best accuracy.|
 |iconColor|[Color]({{ site.baseurl }}{% link main/datatypes.md %})|(Also nodeColor) The color of the orbit icon/node.|
